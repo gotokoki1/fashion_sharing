@@ -1,2 +1,111 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<%# %= render "shared/header" %> 
+<div class='main'>
+  <div class='title-contents'>
+    <h2 class='service-title'>
+      ファッションを共有しよう！
+    </h2>
+    <p class='service-explain'>
+      自分のファッションをアピール・気になるファッションを真似しよう
+    </p>
+  </div>
+ 
+  <div class='select-reason-contents'>
+    <h2 class='title'>
+      ファッションを共有しよう
+    </h2>
+    <ul class='reason-lists'>
+      <li class='list'>
+        <%= image_tag "businessman-1284460_1280.png", class:"list-pict" %>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'>自分のファッション</span>
+          をみんなに共有しよう
+        </h3>
+      </li>
+      <li class='list'>
+        <%= image_tag "couple-4682956_1280.png", class:"list-pict" %>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'>好みのファッション</span>
+          を探してチェックしよう
+        </h3>
+      </li>
+      <li class='list'>
+        <%= image_tag "people-2594683_1280.png", class:"list-pict" %>
+        <h3 class='reason-list-text'>
+          気になるファッションの人に
+          <span class='reason-list-blue-text'>コメントしよう</span>
+        </h3>
+      </li>
+    </ul>
+  </div>
+  
+  <div class='ad-contents'>
+    <h2 class='ad-title'>
+      共有して
+    </h2>
+    <p class='ad-explain'>
+      もっとファッションを楽しもう！
+    </p>
+    <p class='ad-explain'>
+      お洒落が好きな人はどんどん好きなファッションを投稿しましょう
+    </p>
+    <p class='ad-explain'>
+      お洒落が苦手な人はお洒落な人の真似をしよう
+    </p>
+  </div>
+  
+  <div class='feature-contents'>
+    <h2 class='title'>
+      FURIMAの特徴
+    </h2>
+    <ul class='feature-lists'>
+      <li class='list'>
+        <%= image_tag "fashion-2766734_1280.png", class:"list-pict" %>
+        <h3 class='feature-list-text'>
+          お洒落が得意な人のファッションが見れる
+        </h3>
+      </li>
+      <li class='list'>
+        <%= image_tag "people-2576968_1280.png", class:"list-pict" %>
+        <h3 class='feature-list-text'>
+          お洒落が苦手な人でも真似できる
+        </h3>
+      </li>
+      <li class='list'>
+        <%= image_tag "beautiful-girl-2003650_1280.png", class:"list-pict" %>
+        <h3 class='feature-list-text'>
+          お洒落な人にコメントで質問できる
+        </h3>
+      </li>
+    </ul>
+  </div>
+  
+  <div class='post-contents'>
+    <h2 class='title'>ファッション一覧</h2>
+    <%= link_to '新規投稿一覧', "#", class: "subtitle" %>
+    <ul class='post-lists'>
+    <%# <% @.each do || %> 
+      <%# <li class='list'>
+        <%= link_to  do %>
+        <%# <div class='post-img-contents'>
+           <%= image_tag .image, class: "post-img" %>  
+        <%# <% end %>   
+          <%# //商品が売れていればsold outを表示しましょう %>
+        <%# </div>
+        <div class='post-info'>
+          <h3 class='post-title'> %>
+            <%# <%=  %> 
+          <%# </h3>
+        <%# </div> %> 
+      <%# <% end %> 
+    <%# </li> %>
+    <%# <% end %> 
+    </ul>
+  </div>
+  <%# <% end %>  
+</div>
+
+<%= link_to '#', class: 'purchase-btn' do %>
+  <span class='purchase-btn-text'>投稿する</span>
+  <%= image_tag '18122020165644A.png' , size: '185x50', class: "purchase-btn-icon" %>
+<% end %>
+<%# <%= render "shared/footer" %> 
