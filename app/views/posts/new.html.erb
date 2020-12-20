@@ -1,0 +1,64 @@
+<div class="posts-sell-contents">
+  <header class="posts-sell-header">
+    <%= link_to image_tag('18122020165644A.png' , size: '185x50'), "/" %>
+  </header>
+  <div class="posts-sell-main">
+    <h2 class="posts-sell-title">ファッションをアピールしよう</h2>
+    <%= form_with model: @post, local: true do |f| %>
+    <%= render 'shared/error_messages', model: f.object %>
+    <div class="img-upload">
+      <div class="weight-bold-text">
+        ファッション画像
+        <span class="indispensable">必須</span>
+      </div>
+      <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= f.file_field :image %>
+      </div>
+    </div>
+    <div class="new-posts">
+      <div class="weight-bold-text">
+        タイトル
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :title, class:"posts-text", placeholder:"タイトル" %>
+      <div class="posts-explain">
+        <div class="weight-bold-text">
+          ファッションのポイント
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :explanation, class:"posts-text", placeholder:"ファッションのポイント" %>
+        <div class="weight-bold-text">
+          購入場所
+        </div>
+        <%= f.text_area :parchase, class:"posts-text", placeholder:"購入できるサイトのURLなど" %>
+      </div>
+    </div>
+    <div class="sell-price">
+      <div class="weight-bold-text question-text">
+        <span>購入予算</span>
+        <a class="question" href="#">?</a>
+      </div>
+      <div>
+        <div class="price-content">
+          <div class="price-text">
+            <span>予算</span>
+          </div>
+          <span class="sell-yen">¥</span>
+          <%= f.text_field :clothes_price, class:"price-input", placeholder:"例）300" %>
+        </div>
+      </div>
+    </div>
+    <div class="sell-btn-contents">
+      <%= f.submit "投稿する", class:"sell-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+  </div>
+  <% end %>
+
+  <footer class="posts-sell-footer">
+    <%= link_to image_tag('18122020165644A.png', size: '185x50'), "/" %>
+  </footer>
+</div>
