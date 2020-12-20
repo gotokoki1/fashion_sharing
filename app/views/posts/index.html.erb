@@ -85,7 +85,7 @@
     <ul class='post-lists'>
     <% @posts.each do |post| %>
        <li class='list'>
-        <%= link_to posts_path(post.id) do %>
+        <%= link_to post_path(post.id) do %>
          <div class='post-img-contents'>
            <%= image_tag post.image, class: "post-img" %>  
         <% end %>   
