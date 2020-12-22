@@ -6,7 +6,6 @@ a {
   background: #f8f8f8;
 }
 
-/* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 .title-contents {
   width: 100vw;
   height: 70vh;
@@ -67,6 +66,10 @@ a {
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.list{
+  list-style: none;
 }
 
 .reason-lists {
@@ -209,10 +212,11 @@ a {
 }
 
 .post-lists {
-  width: 100vw;
   display: flex;
+  margin-top: 24px;
+  margin: 24px auto 0;
   flex-wrap: wrap;
-  justify-content: center;
+  padding: 0 20px;
 }
 
 .post-lists>.list {
@@ -230,22 +234,6 @@ a {
   width: 33vh;
   height: 33vh;
 }
-
-.sold-out {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  background-color: crimson;
-  transform: skewY(-10deg);
-}
-
-.sold-out>span {
-  color: #FFF;
-  font-size: 45px;
-  font: bold;
-}
-
 
 .post-info {
   background-color: #FFF;
