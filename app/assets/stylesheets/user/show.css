@@ -1,0 +1,65 @@
+.user-red-btn {
+  margin-left: 40%;
+}
+
+.or-user-text {
+  margin-left: 3%;
+}
+
+.user-destroy {
+  margin-left: 3%;
+}
+
+.user-btn {
+  padding-top: 20px;
+  display: flex;
+}
+
+.card {
+  width: calc((100% /3) - 24px );
+  padding: 20px;
+  margin: 12px;
+  border: 1px solid rgba(0,0,0, .4);
+  border-radius: 12px;
+  box-shadow: 0px 1px 9px;
+}
+
+.card__img {
+  margin-bottom: 16px;
+}
+
+.card__title {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.card__body {
+  color: #666666;
+  background-color: #fff;
+}
+
+.card__summary {
+  font-size: 16px;
+}
+
+.card__user {
+  display: block;
+  font-size: 12px;
+  color: #0088ff;
+  text-align: right;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.user-page {
+  margin-left: 30%;
+  font-size: 30px;
+  margin-bottom: 28px;
+  color: #111111;
+}
