@@ -82,23 +82,11 @@
   <div class='post-contents'>
     <h2 class='title'>ファッション一覧</h2>
     <%= link_to '新規投稿一覧', "#", class: "subtitle" %>
-    <ul class='post-lists'>
+    <div class='post-lists'>
     <% @posts.each do |post| %>
-       <li class='list'>
-        <%= link_to post_path(post.id) do %>
-         <div class='post-img-contents'>
-           <%= image_tag post.image, class: "post-img" %>  
-        <% end %>   
-         </div>
-        <div class='post-info'>
-          <h3 class='post-title'> 
-            <%= post.title %> 
-          </h3>
-          <span>購入予算<%= post.clothes_price %>円</span>
-        </div> 
-       </li>
+       <%= render partial: "post", locals: { post: post } %>
     <% end %>
-    </ul>
+    </div>
   </div>
 </div>
 
