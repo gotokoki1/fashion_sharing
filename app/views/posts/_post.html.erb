@@ -2,6 +2,9 @@
    <%= link_to image_tag(post.image, class: :card__img), post_path(post.id)  %>
   <div class="card__body">
     <%= link_to post.title, post_path(post.id), class: :card__title%>
+    <div id="likes_<%= post.id %>">
+      <%= render partial: 'post_likes/like', locals: { post: post } %>
+    </div>
     <%= link_to "by" + post.user.nickname, "/users/#{post.user.id}", class: :card__user %>
   </div>
 </div>

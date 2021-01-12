@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update]
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   def index
+    @post = Post.includes(:user)
     @posts = Post.all
   end
 

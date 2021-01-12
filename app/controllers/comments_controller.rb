@@ -10,6 +10,15 @@ class CommentsController < ApplicationController
     end
   end
 
+  def destroy
+    @post = Post.find(params[:post_id])
+    @comment = @post.comments.find(params[:id])
+    if current_user == @comment.user
+      @comment.destroy
+      render "posts/show"
+    end
+  end
+
   private
 
   def comment_params
