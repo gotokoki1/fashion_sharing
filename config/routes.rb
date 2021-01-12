@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   devise_for :users
   get 'posts/index'
   root to: "posts#index"
-
+  post 'post_likes', to: 'post_likes#create'
   resources :posts do
-    resources :comments, only: [:create]
+    resources :comments, only: [:create, :destroy]
   end
 
   resources :posts do
