@@ -15,7 +15,7 @@ class CommentsController < ApplicationController
     @comment = @post.comments.find(params[:id])
     if current_user == @comment.user
       @comment.destroy
-      render "posts/show"
+      redirect_to post_path(@post)
     end
   end
 
