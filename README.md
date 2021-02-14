@@ -21,6 +21,10 @@ Ruby,RubyonRails,mysql
 # 工夫した点
 プロフィール画像の設定ができるようにしました
 
+# DEMO
+![25c0b2e00ca0f3bb70dbbaafe2d3cdc3](https://user-images.githubusercontent.com/72792963/107877484-23759380-6f10-11eb-92d5-42bb74e2688a.gif)
+
+
 # テーブル設計
 
 ## user テーブル
